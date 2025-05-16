@@ -8,3 +8,4 @@ Pillow
 onnxruntime
 rembg
 scikit-image
+gunicorn
