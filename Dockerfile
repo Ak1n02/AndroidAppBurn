@@ -19,8 +19,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 RUN python download_model.py
 
 # Expose port for Render
-ENV PORT 10000
-EXPOSE 10000
+ENV PORT 5000
+EXPOSE 5000
 
 # Run the app
-CMD ["gunicorn", "--bind", "0.0.0.0:10000", "app:app"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT} app:app"]
