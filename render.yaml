@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: burn-detector
-    env: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: PORT
-        value: 10000
