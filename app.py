@@ -21,7 +21,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['RESULT_FOLDER'] = RESULT_FOLDER
 
 # Load the burn classification model (assumes the model file is in the same directory)
-MODEL_PATH = os.path.join("models", "regnet97valacc.pth")
+MODEL_PATH = os.path.join("models", "regnet94valacc.pth")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = timm.create_model('regnety_080', pretrained=True)
 model.reset_classifier(num_classes=3)  # CRITICAL!!
