@@ -7,5 +7,4 @@ opencv-python
 Pillow
 onnxruntime
 rembg
-PIL
 skimage.metrics
